@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    password: secret
+    url: jdbc:postgresql://127.0.0.1:5432/shipmonk-exchange-rates
+    username: shipmonk
+fixer:
+  api:
+    apikey: ${FIXER_API_KEY:efnPFhGBRgzz2t7zx59ep5PV1pf2Tsis}
+    scheme: ${FIXER_API_SCHEME:https}
+    host: ${FIXER_API_HOST:api.apilayer.com}
+    path: ${FIXER_API_PATH:/fixer/{date}}
+    urlDateParam: ${FIXER_API_URL_DATE_PARAM:date}
+
+
+
